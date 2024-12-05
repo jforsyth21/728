@@ -54,15 +54,24 @@ class Abundance():
             [4.64, 0, 0, -220.4]
         ]
     
-    def a(sel)
-:
-        
-        return    
-    def H(self):
+    def a(self):
+        """
+            Calculates the scale factor at a given time
+        """
+        return
+    
+    def H(self, a):
         """
             Calculates the value of Hubble at any given time.
         """
-        return 
+        return self.H0 * (self.Omega_M * a**(-3) + self.Omega_R * a**(-4) + self.Omega_DE * a**(-3(1+self.w)))
+
+    def dr_dT(self):
+        """
+            How r changes with temperature
+        """
+        denom = rho_tot + P_tot/(c**2) + drho_dt/(3*H)
+        return -drho_dT/denom
     
     def X_eq(self, elemKey, T):
         A = self.A[elemKey]
