@@ -56,7 +56,7 @@ class Abundance():
     
     def a(self):
         """
-            Calculates the scale factor at a given time
+            Calculates the scale factor at a given time. Testing.
         """
         return
     
